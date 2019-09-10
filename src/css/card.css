@@ -1,15 +1,17 @@
 
-.poker {
-  width: 63.5mm;
-  height: 88.9mm;
+.App .poker {
+  width: 19.05rem;
+  height: 26.67rem;
+  min-width: 19.05rem;
+  border-radius: 1rem;
 
 }
-.card {
+.App .card {
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 0 5px black;/*this color needs to be aliased to theme*/
+  border-radius: 1rem;
+  box-shadow: 0 0 .3rem black;/*this color needs to be aliased to theme*/
   text-align: left;
-  margin: 5mm;
+  margin: 1rem;
 }
 
 .card img{
@@ -19,18 +21,24 @@
 
 .card .title{
   color: white;
-  text-shadow: 2px 2px 8px black;
-  padding: .1em .1em .1em .1em;
+  text-shadow: .1rem .1rem .2rem black;
+  padding: .3rem;
   display:inline-block;
   border-style: solid;
-  border-radius: 3px;
-  box-shadow: 1px 1px 3px black;
+  border-radius: .3rem;
+  box-shadow: .1rem .1rem .3rem black;
   margin: 0;
+  margin-right: 5rem;
 }
 .card .text{
   color:#fff;
-  text-shadow: 0em 0em .4em black;
+  text-shadow: 0rem 0rem .3rem black;
   text-align: right;
-  bottom: 3mm; right: 5mm;
+  bottom: .8rem; right: 1.6rem; 
   position:absolute;
+  padding: .4rem;
+  /*border-radius: .3rem;*/
+  /*border-style: solid;*/
+  /*box-shadow: .1rem .1rem .3rem black;*/
+  margin-left: 5rem;
 }

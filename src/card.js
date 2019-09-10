@@ -1,13 +1,14 @@
 import React from 'react';
 import './css/card.css';
+import card from './ass/svg/blackCard.svg';
 
 function Card(props){
   return(
     <div class="card poker">
-      <img class="card-img" src={props.pic}/>
+      { props.pic ? <img class="card-img" src={props.pic} /> : <img class="card-img" src={card}/> }
       <div class="card-img-overlay">
-        <h5 class="title">{props.name}</h5>
-        <p class="text justify-content-end">{props.text}</p>
+      {props.name ? <h5 class="title">{props.name}</h5> : null}
+      {props.text ? <p class="text justify-content-end">{props.text}</p> : null}
       </div>
     </div>
   );

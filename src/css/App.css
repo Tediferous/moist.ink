@@ -23,6 +23,32 @@
   color: #61dafb;
 }
 
+.App .hand{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.App .section .container {
+  margin-left: 1rem;
+  padding-left: 0;
+}
+
+.App .section .box {
+  display:inline;
+  padding: .1rem;
+  border-style: solid;
+  border-radius: .3rem;
+  float: left;
+  margin-left: 1rem;
+}
+
+
+.App .section h4 {
+  display:inline;
+  margin: .5rem;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
