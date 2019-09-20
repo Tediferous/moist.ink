@@ -31,6 +31,7 @@
 
 .App .section .container {
   margin-left: 1rem;
+  margin-right: 1rem;
   padding-left: 0;
 }
 
@@ -47,6 +48,59 @@
 .App .section h4 {
   display:inline;
   margin: .5rem;
+  margin-top: 1rem;
+}
+
+.flex-bio {
+  /* We first create a flex layout context */
+  display: flex;
+  
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.flex-bio > * {
+  flex: 1 100%;
+}
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  /* We tell both sidebars to share a row */
+  .flex-bio { flex-wrap: nowrap; }
+  .card { flex: 1 auto; }
+  .stats{ flex: 1 auto; }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+  .stats    { flex: 2 auto;  }
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
 }
 
 @keyframes App-logo-spin {

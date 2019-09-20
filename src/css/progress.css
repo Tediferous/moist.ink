@@ -1,0 +1,15 @@
+.flex-bio .progress {
+  margin: 1rem;
+  order: 2;
+  background-color: #000
+}
+
+.progress .progress-bar{
+  text-align: left;
+  padding: .5rem;
+}
+
+.stats p {
+  margin: 1rem;
+}
+
