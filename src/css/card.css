@@ -46,6 +46,17 @@
   margin: 1rem;
 }
 
+.App div .card .soldOut {
+  background-color: #f00;
+  text-align: center;
+  color: #fff;
+  transform: rotateY(0deg) rotate(45deg);
+  position: absolute;
+  width: 20rem;
+  top: 3rem;
+  right: -6rem;
+}
+
 .card img{
   min-height: 100%;
   object-fit: cover; 

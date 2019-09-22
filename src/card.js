@@ -8,8 +8,9 @@ function Card(props){
       { props.pic ? <img class="card-img" src={props.pic} /> : <img class="card-img" src={card}/> }
       <div class="card-img-overlay">
       {props.name ? <h5 class="title">{props.name}</h5> : null}
-      {props.lvl  ? <h2 class="lvl">LVL.{props.lvl}</h2> : null}
+      {props.lvl  ? <h2 class="lvl">{props.lvl}</h2> : null}
       {props.text ? <p class="text justify-content-end">{props.text}</p> : null}
+      {props.soldout ? <h5 class="soldOut">SOLD OUT </h5> : null}
       </div>
     </div>
   );

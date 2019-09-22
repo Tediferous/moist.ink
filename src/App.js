@@ -33,7 +33,7 @@ function App() {
 
 
         <div class="flex-bio">
-          <Card cls="poker"  name="Donald" lvl="35" pic="https://i.pinimg.com/originals/87/bf/ea/87bfeaddc6817307ed2420c92dbe5cf0.png"/>
+          <Card cls="poker"  name="Donald" lvl="lvl.35" pic="https://i.pinimg.com/originals/87/bf/ea/87bfeaddc6817307ed2420c92dbe5cf0.png"/>
 
           <div class="stats">
             <div class="stat-row">
@@ -59,23 +59,23 @@ The path of the righteous man is beset on all sides by the iniquities of the sel
         </div>
         <hr/>
 
-      <div class="section">
+      <div class="store section">
         <div class="container"><div class="row"><h2 class="box">THINGS</h2> <h4>Buy them</h4></div></div>
         <div class="hand">
-          <Card cls="square" pic="https://cdn11.bigcommerce.com/s-iodt3qca/images/stencil/1280x1280/products/505/966/s-l1600__06219.1538706999.jpg?c=2?imbypass=on"/>
-          <Card cls="square" pic="https://images-na.ssl-images-amazon.com/images/I/71IlJIxSypL._SL1000_.jpg"/>
+          <Card cls="square" name="BLACK" soldout="true"text="A cool thing" pic="https://cdn11.bigcommerce.com/s-iodt3qca/images/stencil/1280x1280/products/505/966/s-l1600__06219.1538706999.jpg?c=2?imbypass=on"/>
+          <Card cls="square" name="WHITE" lvl="$10" pic="https://images-na.ssl-images-amazon.com/images/I/71IlJIxSypL._SL1000_.jpg"/>
+        </div>
+        <hr/>
+        <div class="hand">
+          <Card cls="square" soldout="true"/>
+          <Card cls="square" />
+          <Card cls="square" />
+          <Card cls="square" soldout="true"/>
         </div>
         <hr/>
         <div class="hand">
           <Card cls="square" />
-          <Card cls="square" />
-          <Card cls="square" />
-          <Card cls="square" />
-        </div>
-        <hr/>
-        <div class="hand">
-          <Card cls="square" />
-          <Card cls="square" />
+          <Card cls="square" soldout="true"/>
           <Card cls="square" />
         </div>
       </div>
