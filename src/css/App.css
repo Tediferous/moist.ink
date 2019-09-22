@@ -66,15 +66,24 @@
   align-items: center;
   
 }
-
 .flex-bio > * {
   flex: 1 100%;
 }
+
+.stat-row {
+  flex-flow: row wrap;
+  display: flex;
+}
+.stat-row > * {
+  flex: 1 100%;
+}
+
 
 /* Medium screens */
 @media all and (min-width: 600px) {
   /* We tell both sidebars to share a row */
   .flex-bio { flex-wrap: nowrap; }
+  .stat-row { flex-wrap: nowrap; }
   .card { flex: 1 auto; }
   .stats{ flex: 1 auto; }
 }

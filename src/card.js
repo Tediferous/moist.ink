@@ -4,7 +4,7 @@ import card from './ass/svg/blackCard.svg';
 
 function Card(props){
   return(
-    <div class={"card poker " + props.cls} >
+    <div class={"card " + props.cls} >
       { props.pic ? <img class="card-img" src={props.pic} /> : <img class="card-img" src={card}/> }
       <div class="card-img-overlay">
       {props.name ? <h5 class="title">{props.name}</h5> : null}
