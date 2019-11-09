@@ -1,0 +1,30 @@
+/*COLOR*/
+$redHex: #f00;
+$greenHex: #0f0;
+$blueHex: #00f;
+$cyanHex: #0ff;
+$magentaHex: #f0f;
+$yellowHex: #ff0;
+
+$red: rgba(255, 0, 0, 0.7);
+$green: rgba(0, 255, 0, 0.7);
+$blue: rgba(0, 0, 255, 0.7);
+$cyan: rgba(0, 255, 255, 0.7);
+$magenta: rgba(255, 0, 255, 0.7);
+$yellow: rgba(255, 255, 0, 0.7);
+
+$black: #000;
+$dark-gray: #202020;
+$middle-gray: #808080;
+$light-gray: #d0d0d0;
+$white: #fff;
+
+$primary: $white;
+$primaryShadow: $black;
+
+$secondary: $middle-gray;
+$accent: $green;
+
+/*LENGTH*/
+$pokerWidth: 19.05rem;
+$pokerHeight: 26.67rem;
