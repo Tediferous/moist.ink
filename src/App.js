@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/App.scss';
+import './css/animation.scss';
 import './css/vars.scss';
 import Navbar from './navbar'
 import Jumbo from './jumbotron'
