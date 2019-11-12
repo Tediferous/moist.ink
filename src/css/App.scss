@@ -67,7 +67,7 @@
         position: absolute;
         left:0; right: 0; top: 18.5rem;
         overflow: hidden;
-        height: 60%;
+        height: 80%;
         width: $pokerWidth - 2rem;
         margin-left: auto;
         margin-right: auto;
@@ -277,7 +277,7 @@
   position: absolute;
   left:0; right: 0; top: 18.5rem;
   overflow: hidden;
-  height: 60%;
+  height: 80%;
   width: $pokerWidth - 2rem;
   margin-left: auto;
   margin-right: auto;
@@ -289,6 +289,10 @@
     position: absolute;
     border-radius:50%;
     animation: fall 10s infinite;
+    border-radius: 0 50% 50% 50%;
+    /*border: 3px solid black;*/
+    transform: rotate(45deg);
+    margin-top: 20px;
   }
   .drop:nth-of-type(2n){
     width: 5rem;

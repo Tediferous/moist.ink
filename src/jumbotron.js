@@ -9,8 +9,8 @@ function Jumbo(){
       </div>
       <div class="front">
         <h1>MOIST.INK</h1>
-        <img class="invert" src={logo} className="App-logo" alt="logo" />
         <Drip/>
+        <img class="invert" src={logo} className="App-logo" alt="logo" />
       </div>
       <svg>
         <defs>
