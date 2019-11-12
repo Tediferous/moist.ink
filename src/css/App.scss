@@ -4,11 +4,6 @@
   text-align: center;
 }
 
-.App-logo {
-  /*animation: App-logo-spin infinite 20s linear;*/
-  height: $pokerWidth;
-  pointer-events: none;
-}
 
 .App-header {
   background-color: $primary;
@@ -47,8 +42,51 @@
   }
   .jumbotron{
     background: $middle-gray;
-    color: $black;
+    background-image: url("https://us.123rf.com/450wm/sylverarts/sylverarts1407/sylverarts140701273/30250368-optical-lines-seamless-pattern-city-black-and-white-simple-geometric-stylish-vector-repeat-backgroun.jpg?ver=6");
+    color: $white;
     overflow: hidden;
+    height: $pokerHeight * 1.5;
+    .front{
+      h1{
+        position: absolute;
+        left: 0; right: 0; top: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .App-logo {
+        /*animation: App-logo-spin infinite 20s linear;*/
+        height: $pokerWidth;
+        pointer-events: none;
+        position: absolute;
+        left: 0; right: 0; top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .drip{
+        filter: url(#goo);
+        position: absolute;
+        left:0; right: 0; top: 18.5rem;
+        overflow: hidden;
+        height: 60%;
+        width: $pokerWidth - 2rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .back{
+      .drip{
+        filter: url(#goo);
+        position: absolute;
+        left:0; right: 0; top: -2rem;
+        height: 120%;
+        width: 140%;
+        margin-left: auto;
+        margin-right: auto;
+        .drop{
+          background-color: $light-gray;
+        }
+      }
+    }
 
   }
 
@@ -237,13 +275,12 @@
 .drip{
   filter: url(#goo);
   position: absolute;
-  left:0; right: 0; top: 19rem;
+  left:0; right: 0; top: 18.5rem;
   overflow: hidden;
-  height: 110%;
+  height: 60%;
   width: $pokerWidth - 2rem;
   margin-left: auto;
   margin-right: auto;
-
   .drop{
     width: 3rem;
     height: 3rem;
@@ -251,81 +288,81 @@
     background-color: $white;
     position: absolute;
     border-radius:50%;
-    animation: fall 7s infinite;
+    animation: fall 10s infinite;
   }
   .drop:nth-of-type(2n){
     width: 5rem;
     height: 5rem;
   }
   .drop:nth-of-type(3n){
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
   }
-  .drop:nth-of-type(1){
-    left: 20%;
+  .drop:nth-of-type(1n){
+    left: 10%;
     animation-delay: 6.5s;
   }
-  .drop:nth-of-type(2){
-    left: 60%;
+  .drop:nth-of-type(2n){
+    left: 50%;
     animation-delay: 3.3s;
   }
-  .drop:nth-of-type(3){
-    left: 30%;
+  .drop:nth-of-type(3n){
+    left: 20%;
     animation-delay: 1.5s;
   }
-  .drop:nth-of-type(4){
-    left: 40%;
+  .drop:nth-of-type(4n){
+    left: 30%;
     animation-delay: 0.9s;
   }
-  .drop:nth-of-type(5){
-    left: 50%;
+  .drop:nth-of-type(5n){
+    left: 40%;
     animation-delay: 0.6s;
   }
-  .drop:nth-of-type(6){
-    left: 80%;
+  .drop:nth-of-type(6n){
+    left: 50%;
     animation-delay: 3.5s;
   }
-  .drop:nth-of-type(7){
-    left: 70%;
+  .drop:nth-of-type(7n){
+    left: 60%;
     animation-delay: 6.0s;
   }
-  .drop:nth-of-type(8){
+  .drop:nth-of-type(8n){
     left: 55%;
     animation-delay: 1.8s;
   }
-  .drop:nth-of-type(9){
+  .drop:nth-of-type(9n){
     left: 25%;
     animation-delay: 3.8s;
   }
-  .drop:nth-of-type(10){
-    left: 69%;
+  .drop:nth-of-type(10n){
+    left: 59%;
     animation-delay: 2.9s;
   }
-  .drop:nth-of-type(11){
-    left: 75%;
+  .drop:nth-of-type(11n){
+    left: 65%;
     animation-delay: 6.4s;
   }
-  .drop:nth-of-type(12){
+  .drop:nth-of-type(12n){
     left: 34%;
     animation-delay: 1.7s;
   }
-  .drop:nth-of-type(13){
-    left: 63%;
+  .drop:nth-of-type(13n){
+    left: 33%;
     animation-delay: 5.5s;
   }
-  .drop:nth-of-type(14){
-    left: 71%;
+  .drop:nth-of-type(14n){
+    left: 61%;
     animation-delay: 0.5s;
   }
-  .drop:nth-of-type(15){
+  .drop:nth-of-type(15n){
     left: 53%;
     animation-delay: 6.8s;
   }
-  .drop:nth-of-type(16){
-    left: 80%;
+  .drop:nth-of-type(16n){
+    left: 20%;
     animation-delay: 2.7s;
   }
-  .drop:nth-of-type(17){
+  .drop:nth-of-type(17n){
     left: 68%;
     animation-delay: 2.2s;
   }

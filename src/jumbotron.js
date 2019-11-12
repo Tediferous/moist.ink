@@ -1,41 +1,16 @@
 import React from 'react';
 import logo from './ass/svg/logo.svg';
+import Drip from './drip'
 
 function Jumbo(){
   return(
     <div class="jumbotron invert">
-      <img class="invert" src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://Moist.Ink/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-      <div class="drip">
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="border"/>
-        <div class="border"/>
+      <div class="back">
+      </div>
+      <div class="front">
+        <h1>MOIST.INK</h1>
+        <img class="invert" src={logo} className="App-logo" alt="logo" />
+        <Drip/>
       </div>
       <svg>
         <defs>
