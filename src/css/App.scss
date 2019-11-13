@@ -1,5 +1,10 @@
 @import "vars.scss";
 
+@font-face {
+  font-family: moist;
+  src: url(../ass/font/MOIST.ttf);
+}
+
 .App {
   text-align: center;
 }
@@ -33,6 +38,9 @@
   color: $secondary;
 
   .navbar{
+    .navbar-brand {
+      font-family: moist;
+    }
     a {
       color: $secondary;
     }
@@ -42,7 +50,6 @@
   }
   .jumbotron{
     background: $middle-gray;
-    background-image: url("https://us.123rf.com/450wm/sylverarts/sylverarts1407/sylverarts140701273/30250368-optical-lines-seamless-pattern-city-black-and-white-simple-geometric-stylish-vector-repeat-backgroun.jpg?ver=6");
     color: $white;
     overflow: hidden;
     height: $pokerHeight * 1.5;
@@ -52,6 +59,8 @@
         left: 0; right: 0; top: 20rem;
         margin-left: auto;
         margin-right: auto;
+        font-family: moist;
+        font-size: 2rem;
       }
       .App-logo {
         /*animation: App-logo-spin infinite 20s linear;*/
@@ -220,6 +229,7 @@
       border-radius: .3rem;
       float: left;
       margin-left: 1rem;
+      font-family: moist;
     }
     h4 {
       display:inline;
@@ -288,7 +298,7 @@
     background-color: $white;
     position: absolute;
     border-radius:50%;
-    animation: fall 10s infinite;
+    animation: fall 7s infinite;
     border-radius: 0 50% 50% 50%;
     /*border: 3px solid black;*/
     transform: rotate(45deg);
@@ -307,67 +317,67 @@
     animation-delay: 6.5s;
   }
   .drop:nth-of-type(2n){
-    left: 50%;
+    left: 30%;
     animation-delay: 3.3s;
   }
   .drop:nth-of-type(3n){
-    left: 20%;
+    left: 50%;
     animation-delay: 1.5s;
   }
   .drop:nth-of-type(4n){
-    left: 30%;
+    left: 40%;
     animation-delay: 0.9s;
   }
   .drop:nth-of-type(5n){
-    left: 40%;
+    left: 20%;
     animation-delay: 0.6s;
   }
   .drop:nth-of-type(6n){
-    left: 50%;
+    left: 30%;
     animation-delay: 3.5s;
   }
   .drop:nth-of-type(7n){
-    left: 60%;
+    left: 40%;
     animation-delay: 6.0s;
   }
   .drop:nth-of-type(8n){
-    left: 55%;
+    left: 50%;
     animation-delay: 1.8s;
   }
   .drop:nth-of-type(9n){
-    left: 25%;
+    left: 10%;
     animation-delay: 3.8s;
   }
   .drop:nth-of-type(10n){
-    left: 59%;
+    left: 20%;
     animation-delay: 2.9s;
   }
   .drop:nth-of-type(11n){
-    left: 65%;
+    left: 40%;
     animation-delay: 6.4s;
   }
   .drop:nth-of-type(12n){
-    left: 34%;
+    left: 10%;
     animation-delay: 1.7s;
   }
   .drop:nth-of-type(13n){
-    left: 33%;
+    left: 20%;
     animation-delay: 5.5s;
   }
   .drop:nth-of-type(14n){
-    left: 61%;
+    left: 50%;
     animation-delay: 0.5s;
   }
   .drop:nth-of-type(15n){
-    left: 53%;
+    left: 30%;
     animation-delay: 6.8s;
   }
   .drop:nth-of-type(16n){
-    left: 20%;
+    left: 10%;
     animation-delay: 2.7s;
   }
   .drop:nth-of-type(17n){
-    left: 68%;
+    left: 20%;
     animation-delay: 2.2s;
   }
   .border{
