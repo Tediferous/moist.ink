@@ -21,10 +21,3 @@ function Card(props){
 }
 
 export default Card;
-//https://www.kepplerspeakers.com/sam-m.jpg
-//var flip = document.querySelector('.flip-card');
-//if(flip){
-//  flip.addEventListener( 'click', function() {
-//    flip.classList.toggle('is-flipped');
-//  });
-//}
