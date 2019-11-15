@@ -3,26 +3,26 @@ import React from 'react';
 function Drip(){
   return(
     <div>
-      <div class="drip">
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="drop"/>
-        <div class="border"/>
-        <div class="border"/>
+      <div className="drip">
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="drop"/>
+        <div className="border"/>
+        <div className="border"/>
       </div>
     </div>
   );

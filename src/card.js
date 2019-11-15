@@ -3,18 +3,18 @@ import card from './ass/svg/card.svg';
 
 function Card(props){
   return(
-    <div class={"card " + props.cls} >
-      <div class="card-front card-face">
-        { props.pic ? <img class="card-img" src={props.pic} /> : <img class="card-img " src={card}/> }
-        <div class="card-img-overlay">
-          {props.name ? <h5 class="title ">{props.name}</h5> : null}
-          {props.lvl  ? <h2 class="lvl ">{props.lvl}</h2> : null}
-          {props.text ? <p class="text justify-content-end ">{props.text}</p> : null}
-          {props.soldout ? <h5 class="soldOut ">SOLD OUT </h5> : null}
+    <div className={"card " + props.cls} >
+      <div className="card-front card-face">
+        { props.pic ? <img className="card-img" src={props.pic} alt=""/> : <img className="card-img " src={card} alt=""/> }
+        <div className="card-img-overlay">
+          {props.name ? <h5 className="title ">{props.name}</h5> : null}
+          {props.lvl  ? <h2 className="lvl ">{props.lvl}</h2> : null}
+          {props.text ? <p className="text justify-content-end ">{props.text}</p> : null}
+          {props.soldout ? <h5 className="soldOut ">SOLD OUT </h5> : null}
         </div>
       </div>
-      <div class="card-back card-face">
-        <img class="card-img" src={card}/>
+      <div className="card-back card-face">
+        <img className="card-img" src={card} alt=""/>
       </div>
     </div>
   );

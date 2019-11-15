@@ -4,7 +4,9 @@
   font-family: moist;
   src: url(../ass/font/MOIST.ttf);
 }
-
+body, html {
+  overflow-x: hidden; 
+}
 .App {
   text-align: center;
 }
@@ -52,7 +54,7 @@
     background: $middle-gray;
     color: $white;
     overflow: hidden;
-    height: $pokerHeight * 1.5;
+    height: $pokerHeight * 2;
     .front{
       h1{
         position: absolute;
@@ -110,12 +112,12 @@
     flex-wrap: nowrap;
     overflow-x: auto;
     .square{
-      width: $pokerWidth;
-      height: $pokerWidth;
-      max-width: $pokerWidth;
-      max-height: $pokerWidth;
-      min-width: $pokerWidth;
-      min-height: $pokerWidth;
+      width: $pokerHeight;
+      height: $pokerHeight;
+      max-width: $pokerHeight;
+      max-height: $pokerHeight;
+      min-width: $pokerHeight;
+      min-height: $pokerHeight;
       border-radius: 1rem;
       padding: 0;
       margin: 1rem;
@@ -139,8 +141,7 @@
       transform: rotateY(180deg);
     }      
     .card{
-      max-height: $pokerHeight;
-      min-height: $pokerHeight;
+      height: $pokerHeight;
       min-width: $pokerWidth;
       padding: 0;
       border-radius: 1rem;
@@ -292,8 +293,8 @@
   margin-left: auto;
   margin-right: auto;
   .drop{
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     top: -20%;
     background-color: $white;
     position: absolute;
@@ -309,8 +310,8 @@
     height: 5rem;
   }
   .drop:nth-of-type(3n){
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 6rem;
   }
   .drop:nth-of-type(1n){
     left: 10%;

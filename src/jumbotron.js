@@ -4,13 +4,12 @@ import Drip from './drip'
 
 function Jumbo(){
   return(
-    <div class="jumbotron invert">
-      <div class="back">
+    <div className="jumbotron invert">
+      <div className="back">
       </div>
-      <div class="front">
-        <h1>MOIST INK</h1>
+      <div className="front">
         <Drip/>
-        <img class="invert" src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" />
       </div>
       <svg>
         <defs>

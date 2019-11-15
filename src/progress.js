@@ -3,8 +3,8 @@ import './css/progress.scss';
 
 function Progress(props){
   return(
-    <div class="progress">
-      <div class={"progress-bar " + props.color} role="progressbar" style={{ width: props.power+"%"}} aria-valuenow={ "" + props.power} aria-valuemin="0" aria-valuemax="100">{props.stat}</div>
+    <div className="progress">
+      <div className={"progress-bar " + props.color} role="progressbar" style={{ width: props.power+"%"}} aria-valuenow={ "" + props.power} aria-valuemin="0" aria-valuemax="100">{props.stat}</div>
     </div>
   );
 }
