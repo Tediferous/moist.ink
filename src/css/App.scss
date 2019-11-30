@@ -23,14 +23,12 @@ body, html {
   color: $secondary;
 }
 
-.App-link {
-  color: $accent;
-}
 
 .invert {
     filter: invert(100%);
 }
 /*
+
 .invert img {
     filter: invert(100%);
 }
@@ -42,6 +40,7 @@ body, html {
   .navbar{
     .navbar-brand {
       font-family: moist;
+      font-size: 1.5rem;
     }
     a {
       color: $secondary;
@@ -49,6 +48,12 @@ body, html {
     .active{
       font-weight: bold;
     }
+  }
+  .footer{
+    background: $dark-gray;
+a {
+  color: $accent;
+}
   }
   .jumbotron{
     background: $middle-gray;
@@ -127,8 +132,8 @@ body, html {
   div {
     .poker {
       width: $pokerWidth;
-      height: $pokerHeight;
       max-width: $pokerWidth;
+      height: $pokerHeight;
     }
     .flip-card{
       transition: transform 0.8s;
@@ -157,8 +162,6 @@ body, html {
         backface-visibility: hidden;
       }
       .card-front{
-        min-height: 100%;
-        object-fit: cover; 
         .card-img {
           border-radius: 1rem;
           height: 100%;

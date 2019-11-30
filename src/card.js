@@ -14,7 +14,7 @@ function Card(props){
         </div>
       </div>
       <div className="card-back card-face">
-        <img className="card-img" src={card} alt=""/>
+        { props.cls && props.cls.includes("flip-card") ? <img className="card-img" src={card} alt=""/> : <div/>}
       </div>
     </div>
   );

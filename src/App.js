@@ -23,7 +23,6 @@ function App() {
           <Card cls="poker flip-card is-flipped" name="Christopher" pic="https://instagram.fatl1-1.fna.fbcdn.net/vp/fd75902f8b58a516b352dfe7d23ce2a4/5E5811CB/t51.2885-15/sh0.08/e35/p640x640/65309994_470543310408753_6907471006986291045_n.jpg?_nc_ht=instagram.fatl1-1.fna.fbcdn.net&_nc_cat=109" text="New music soon..."/>
           <Card cls="poker" name="Austin (or maybe Xavier Woods, depends who's asking)" pic="https://66.media.tumblr.com/84420e4680ec8a4a70e5a988882eca61/tumblr_ojzjqxYofX1qevcs2o1_500.gif" text="This is a sentence."/>
           <Card cls="poker" name="Scott" pic="https://i.pinimg.com/originals/31/1d/b6/311db6e2482851777e2caf17582e6627.jpg" />
-          <Card cls="square" pic="https://instagram.fatl1-1.fna.fbcdn.net/vp/1a9b56ce457d195ec2181695d8024abd/5E86FB2D/t51.2885-15/e35/75244371_423091488588549_170178480423260246_n.jpg?_nc_ht=instagram.fatl1-1.fna.fbcdn.net&_nc_cat=109" />
         </div>
       </div>
       <hr/>
