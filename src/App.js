@@ -1,4 +1,10 @@
 import React from 'react';
+//import {
+//  BrowserRouter as Router,
+//  Switch,
+//  Route,
+//  Link
+//} from "react-router-dom";
 import './css/App.scss';
 import './css/animation.scss';
 import './css/vars.scss';
@@ -15,6 +21,7 @@ function App() {
     <div id="myApp" className="App">
       <Navbar/>
       <Jumbo/>
+
       <div className="section">
         <div className="container"><div className="row"><h2 className="box">2</h2> <h4>BOOP</h4></div></div>
         <div className="hand">
@@ -34,7 +41,6 @@ function App() {
           <Card cls="poker" />
       </div>
       <hr/>
-
 
         <div className="flex-bio">
           <Card cls="poker flip-card"  name="Donald" lvl="lvl.35" pic="https://i.pinimg.com/originals/87/bf/ea/87bfeaddc6817307ed2420c92dbe5cf0.png"/>
@@ -61,7 +67,7 @@ The path of the righteous man is beset on all sides by the iniquities of the sel
           </div>
 
         </div>
-        <hr/>
+      <hr/>
 
       <div className="store section">
         <div className="container"><div className="row"><h2 className="box">THINGS</h2> <h4>Buy them</h4></div></div>
