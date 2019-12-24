@@ -28,7 +28,6 @@ body, html {
     filter: invert(100%);
 }
 /*
-
 .invert img {
     filter: invert(100%);
 }
@@ -38,6 +37,7 @@ body, html {
   color: $secondary;
 
   .navbar{
+    background: $dark-gray;
     .navbar-brand {
       font-family: moist;
       font-size: 1.5rem;
@@ -286,116 +286,6 @@ a {
 .stat-row > * {
   flex: 1 100%;
 }
-.drip{
-  filter: url(#goo);
-  position: absolute;
-  left:0; right: 0; top: 18.5rem;
-  overflow: hidden;
-  height: 80%;
-  width: $pokerWidth - 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  .drop{
-    width: 4rem;
-    height: 4rem;
-    top: -20%;
-    background-color: $white;
-    position: absolute;
-    border-radius:50%;
-    animation: fall 7s infinite;
-    border-radius: 0 50% 50% 50%;
-    /*border: 3px solid black;*/
-    transform: rotate(45deg);
-    margin-top: 20px;
-  }
-  .drop:nth-of-type(2n){
-    width: 5rem;
-    height: 5rem;
-  }
-  .drop:nth-of-type(3n){
-    width: 6rem;
-    height: 6rem;
-  }
-  .drop:nth-of-type(1n){
-    left: 10%;
-    animation-delay: 6.5s;
-  }
-  .drop:nth-of-type(2n){
-    left: 30%;
-    animation-delay: 3.3s;
-  }
-  .drop:nth-of-type(3n){
-    left: 50%;
-    animation-delay: 1.5s;
-  }
-  .drop:nth-of-type(4n){
-    left: 40%;
-    animation-delay: 0.9s;
-  }
-  .drop:nth-of-type(5n){
-    left: 20%;
-    animation-delay: 0.6s;
-  }
-  .drop:nth-of-type(6n){
-    left: 30%;
-    animation-delay: 3.5s;
-  }
-  .drop:nth-of-type(7n){
-    left: 40%;
-    animation-delay: 6.0s;
-  }
-  .drop:nth-of-type(8n){
-    left: 50%;
-    animation-delay: 1.8s;
-  }
-  .drop:nth-of-type(9n){
-    left: 10%;
-    animation-delay: 3.8s;
-  }
-  .drop:nth-of-type(10n){
-    left: 20%;
-    animation-delay: 2.9s;
-  }
-  .drop:nth-of-type(11n){
-    left: 40%;
-    animation-delay: 6.4s;
-  }
-  .drop:nth-of-type(12n){
-    left: 10%;
-    animation-delay: 1.7s;
-  }
-  .drop:nth-of-type(13n){
-    left: 20%;
-    animation-delay: 5.5s;
-  }
-  .drop:nth-of-type(14n){
-    left: 50%;
-    animation-delay: 0.5s;
-  }
-  .drop:nth-of-type(15n){
-    left: 30%;
-    animation-delay: 6.8s;
-  }
-  .drop:nth-of-type(16n){
-    left: 10%;
-    animation-delay: 2.7s;
-  }
-  .drop:nth-of-type(17n){
-    left: 20%;
-    animation-delay: 2.2s;
-  }
-  .border{
-    position: absolute;
-    background-color: $white;
-  }
-  .border:nth-last-of-type(1){
-    top: 0; left:0;
-  }
-  .border:nth-last-of-type(2){
-    bottom: 0; left:0;
-  }
-}
-
 /* Medium screens */
 @media all and (min-width: 600px) {
   /* We tell both sidebars to share a row */

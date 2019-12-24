@@ -1,7 +1,21 @@
 import React,{Component} from 'react';
 import logo from './ass/svg/logo.svg';
-import Nav from './nav'
 
+const Nav = (props) => {
+  if (props.active){
+    return(
+      <li className="nav-item active">
+        <a className="nav-link" href={props.path}>{props.children}</a>
+      </li>
+    )
+  }else{
+    return(
+      <li className="nav-item">
+        <a className="nav-link" href={props.path}>{props.children}</a>
+      </li>
+    )
+  }
+}
 class Navbar extends Component {
   // Setting Initial State
   state = {
@@ -9,10 +23,11 @@ class Navbar extends Component {
       {name:"Home",    active: true , path:"/" },
       {name:"Products",active: false, path:"/products" },
       {name:"Team",    active: false, path:"/team" },
-      {name:"About",   active: false, path:"/about" },
+      {name:"Comic",   active: false, path:"/comic" },
     ],
     title:"MOIST.INK",
     colorMode: "navbar-dark",
+    number: 12,
   }
 
 
@@ -40,7 +55,7 @@ class Navbar extends Component {
           <ul className="navbar-nav ml-auto">
             {
               this.state.buttons.map((button)=>{
-                return <Nav onClick={this.toggleActive} active={button.active} path={button.path}>{button.name}</Nav>
+                return <Nav key={button.name}onClick={this.toggleActive} active={button.active} path={button.path}>{button.name}</Nav>
               })
             }
           </ul>

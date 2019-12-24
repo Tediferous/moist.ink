@@ -1,11 +1,16 @@
-import React from 'react';
+import React,{Component} from 'react';
 
-function Foot(){
-  return(
+class Foot extends Component{
+  state = {
 
-    <div className="footer footer-copyright text-center py-3">© 2019 Copyright:
-      <a href="/">MOIST.INK</a>
-    </div>
-  );
+  }
+
+  render(){
+    return(
+      <div className="footer footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="/">MOIST.INK</a>
+      </div>
+    );
+  }
 }
 export default Foot;

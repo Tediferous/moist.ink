@@ -1,9 +1,12 @@
 import React from 'react';
 import card from './ass/svg/card.svg';
 
-function Card(props){
+const Card = (props) => {
+  var isF  = props.isFlipped ? " is-flipped" : "";
+  var canF = props.canFlip ? " flip-card" : "";
+  var poke = props.poker ? " poker" : "";
   return(
-    <div className={"card " + props.cls} >
+    <div className={"card" +isF +canF +poke } >
       <div className="card-front card-face">
         { props.pic ? <img className="card-img" src={props.pic} alt=""/> : <img className="card-img " src={card} alt=""/> }
         <div className="card-img-overlay">
@@ -14,10 +17,10 @@ function Card(props){
         </div>
       </div>
       <div className="card-back card-face">
-        { props.cls && props.cls.includes("flip-card") ? <img className="card-img" src={card} alt=""/> : <div/>}
+        { props.canFlip ? <img className="card-img" src={card} alt=""/> : <div/>}
       </div>
     </div>
+
   );
 }
-
 export default Card;
