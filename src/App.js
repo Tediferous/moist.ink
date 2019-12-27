@@ -17,27 +17,27 @@ import Foot from './foot'
 
 function App() {
   return (
-      <div id="myApp" className="App">
-        <Navbar/>
-    <Router>
-      <Switch>
-        <Route path="/comic">
-          <Gallery/>
-        </Route>
-        <Route path="/products">
-          <Store/>
-        </Route>
-        <Route path="/team">
-          <Bio/>
-        </Route>
-        <Route path="/">
-          <Jumbo/>
-          <About/>
-        </Route>
-      </Switch>
-    </Router>
-        <Foot/>
-      </div>
+    <div id="myApp" className="App">
+      <Navbar/>
+      <Router>
+        <Switch>
+          <Route path="/comic">
+            <Gallery/>
+          </Route>
+          <Route path="/products">
+            <Store/>
+          </Route>
+          <Route path="/team">
+            <Bio/>
+          </Route>
+          <Route path="/">
+            <Jumbo/>
+            <About/>
+          </Route>
+        </Switch>
+      </Router>
+      <Foot/>
+    </div>
   );
 }
 
