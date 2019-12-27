@@ -5,7 +5,7 @@ class Bio extends Component{
   state = {
     members:[
       {
-        name: "Tyler" ,birth: [1991,3,6], isFlipped: false, canFlip: true, poker: true, rgb: [255,171,235], src: "https://66.media.tumblr.com/16535f2b48ae3d21961bbaca879ca061/tumblr_prq6npQo6W1rtx5jpo3_250.gifv",
+        name: "Tyler" ,birth: [1991,3,6], isFlipped: true, canFlip: true, poker: true, rgb: [255,171,235], src: "https://66.media.tumblr.com/16535f2b48ae3d21961bbaca879ca061/tumblr_prq6npQo6W1rtx5jpo3_250.gifv",
         stats:[
           {HEALTH: 42},
           {PATIENCE: 23},
@@ -17,7 +17,7 @@ class Bio extends Component{
         story: `  Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?`
       },
       {
-        name: "Donald" ,birth: [1983,9,25], isFlipped: false, canFlip: true, poker: true, rgb: [149,0,255], src: "https://i.pinimg.com/originals/87/bf/ea/87bfeaddc6817307ed2420c92dbe5cf0.png",
+        name: "Donald" ,birth: [1983,9,25], isFlipped: true, canFlip: true, poker: true, rgb: [149,0,255], src: "https://i.pinimg.com/originals/87/bf/ea/87bfeaddc6817307ed2420c92dbe5cf0.png",
         stats:[
           {HEALTH: 62},
           {CHARISMA: 84},
@@ -45,7 +45,7 @@ class Bio extends Component{
                   var age = this.getAge( new Date(member.birth[0],member.birth[1]-1,member.birth[2]))
                   return <div key={member.name} className="member">
                     <Card name={member.name} lvl={"lvl."+ age} poker={member.poker} canFlip={member.canFlip} isFlipped={member.isFlipped} pic={member.src}/>
-                    <div className="stats">
+                    <div className="stats collapse">
                       {
                         member.stats.map((stat,index)=>{
                           /*return <Progress color={this.state.colors[index]} power={stat[Object.keys(stat)[0]]} stat={Object.keys(stat)[0]}/>*/

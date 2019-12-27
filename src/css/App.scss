@@ -4,8 +4,14 @@
   font-family: moist;
   src: url(../ass/font/MOIST.ttf);
 }
-body, html {
+html {
   overflow-x: hidden; 
+  height: 100%;
+  body {
+    overflow-x: hidden; 
+    min-height: 100%;
+    background-color: $primary;
+  }
 }
 .App {
   text-align: center;
@@ -50,6 +56,7 @@ body, html {
     }
   }
   .footer{
+    min-height: 100%;
     background: $dark-gray;
 a {
   color: $accent;
@@ -151,7 +158,7 @@ a {
       padding: 0;
       border-radius: 1rem;
       margin: 1rem;
-      box-shadow: 0rem .2rem .5rem $primaryShadow;
+      box-shadow: 0rem .2rem $primaryShadow;
       text-align: left;
       margin: 1rem;
       overflow: hidden;
@@ -177,7 +184,7 @@ a {
         color: $secondary;
         padding: .3rem;
         display:inline-block;
-        box-shadow: .1rem .1rem .3rem $primaryShadow;
+        box-shadow: 0rem .2rem $primaryShadow;
         top: 1.6rem; left: 1.6rem; 
         position:absolute;
         background-color: $primary;
@@ -192,14 +199,14 @@ a {
         bottom: .8rem; right: 1.6rem; 
         position:absolute;
         padding: .4rem;
-        box-shadow: .1rem .1rem .3rem $primaryShadow;
+        box-shadow: 0rem .2rem $primaryShadow;
         background-color: $primary;
         border-radius: .5rem;
         margin-left: 5rem;
       }
       .lvl{
         background-color: $primary;
-        box-shadow: .1rem .1rem .3rem $primaryShadow;
+        box-shadow: 0rem .2rem $primaryShadow;
         border-radius: .5rem;
         padding: .3rem;
         margin: 0;
@@ -211,7 +218,7 @@ a {
       }
       .soldOut {
         background-color: $primary;
-        box-shadow: .1rem .1rem .3rem $primaryShadow;
+        box-shadow: 0rem .2rem $primaryShadow;
         text-align: center;
         color: $secondary;
         transform: rotateY(0deg) rotate(45deg);
@@ -223,6 +230,7 @@ a {
     }
   }
   .section {
+    padding: 1rem;
     .container {
       margin-left: 1rem;
       margin-right: 1rem;
@@ -247,18 +255,28 @@ a {
 
 
 .flex-bio {
+  min-height: 100vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
 
-  .red {background-color: $red}
-  .green {background-color: $green}
-  .blue {background-color: $blue}
-  .yellow {background-color: $yellow}
-  .cyan {background-color: $cyan}
-  .magenta {background-color: $magenta}
-  
+  .member{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    .collapse{
+      display: none;
+      transition: max-height 0.2s ease-out;
+    }
+  }
+  .member.active{
+    .collapse{
+      display: inline;
+    }
+  }
+
   .stats p {
     margin: 1rem;
   }

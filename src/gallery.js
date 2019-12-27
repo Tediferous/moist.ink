@@ -10,7 +10,7 @@ class Gallery extends Component{
         text:"This is a sentence.", source:"https://www.kepplerspeakers.com/sam-m.jpg"},
       {name:"Idris",canFlip: false, isFlipped: false, poker: true,
         text:"This is a really fucking long sentence, jesus fucking christ!", source:"https://upload.wikimedia.org/wikipedia/commons/5/53/Idris_Elba-4822.jpg"},
-      {name:"Christopher",canFlip: true, isFlipped: false, poker: true,
+      {name:"Christopher",canFlip: true, isFlipped: true, poker: true,
         text:"New music coming...", source:"https://imgix.bustle.com/uploads/image/2019/11/8/394f4df6-0cdd-4990-b8ef-4d177c63d762-shutterstock_editorial_10229705q.jpg?w=1020&h=576&fit=crop&crop=faces&auto=format&q=70"},
       {name:"Austin",canFlip: false, isFlipped: false, poker: true,
         text:"This is a sentence.", source:"https://imageresizer.static9.net.au/_KBBBePIgJt4Kveui1l5xzEA7C8=/1024x0/https%3A%2F%2Fprod.static9.net.au%2Ffs%2Ffd84034c-b9b9-4fa2-9cd7-36a24542b9fd"},
