@@ -6,7 +6,7 @@ const Card = (props) => {
   var canF = props.canFlip ? " flip-card" : "";
   var poke = props.poker ? " poker" : "";
   return(
-    <div className={"card" +isF +canF +poke } >
+    <div className={"card" +isF +canF +poke } style={props.style}>
       <div className="card-front card-face">
         { props.pic ? <img className="card-img" src={props.pic} alt=""/> : <img className="card-img " src={card} alt=""/> }
         <div className="card-img-overlay">

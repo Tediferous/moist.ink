@@ -63,6 +63,7 @@ a {
 }
   }
   .jumbotron{
+    min-height: 50vh;
     background: $middle-gray;
     color: $white;
     overflow: hidden;
@@ -203,6 +204,7 @@ a {
         background-color: $primary;
         border-radius: .5rem;
         margin-left: 5rem;
+        backface-visibility: hidden;
       }
       .lvl{
         background-color: $primary;
@@ -215,6 +217,7 @@ a {
         align: right;
         bottom: 1.6rem; right: 1.6rem; 
         position:absolute;
+        backface-visibility: hidden;
       }
       .soldOut {
         background-color: $primary;
@@ -226,8 +229,18 @@ a {
         width: 20rem;
         top: 3rem;
         right: -6rem;
+        backface-visibility: hidden;
       }
     }
+  }
+  .section.comics {
+    min-height: 100vh;
+  }
+  .section.about {
+    min-height: 50vh;
+  }
+  .section.store {
+    min-height: 100vh;
   }
   .section {
     padding: 1rem;
@@ -268,7 +281,6 @@ a {
     align-items: center;
     .collapse{
       display: none;
-      transition: max-height 0.2s ease-out;
     }
   }
   .member.active{
@@ -284,7 +296,7 @@ a {
   .progress {
     margin: .5rem;
     order: 2;
-    background-color: $dark-gray;
+    background-color: $black;
   
     .progress-bar{
       color: $white;

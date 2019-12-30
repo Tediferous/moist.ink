@@ -20,7 +20,7 @@ Now that we know who you are, I know who I am. I'm not a mistake! It all makes s
   }
   render(){
     return(
-      <div className="section">
+      <div className="section about">
         <div className="container"><div className="row"><h2 className="box">{this.state.title}</h2> <h4>{this.state.subtitle}</h4></div></div>
         <p>{this.state.story}</p>
       </div>

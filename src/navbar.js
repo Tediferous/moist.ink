@@ -4,7 +4,7 @@ import logo from './ass/svg/logo.svg';
 const Nav = (props) => {
   if (props.active){
     return(
-      <li className="nav-item active">
+      <li className="nav-item activeTODO">
         <a className="nav-link" href={props.path}>{props.children}</a>
       </li>
     )
@@ -22,8 +22,8 @@ class Navbar extends Component {
     buttons: [
       {name:"Home",    active: true , path:"/" },
       {name:"Products",active: false, path:"/products" },
-      {name:"Team",    active: false, path:"/team" },
       {name:"Comic",   active: false, path:"/comic" },
+      {name:"Team",    active: false, path:"/team" },
     ],
     title:"MOIST.INK",
     colorMode: "navbar-dark",

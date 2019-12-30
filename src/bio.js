@@ -44,12 +44,12 @@ class Bio extends Component{
                 this.state.members.map((member)=>{
                   var age = this.getAge( new Date(member.birth[0],member.birth[1]-1,member.birth[2]))
                   return <div key={member.name} className="member">
-                    <Card name={member.name} lvl={"lvl."+ age} poker={member.poker} canFlip={member.canFlip} isFlipped={member.isFlipped} pic={member.src}/>
+                    <Card style={{ boxShadow : '0rem 0.2rem rgba('+member.rgb[0]+','+member.rgb[1]+','+member.rgb[2]+',1)'}} name={member.name} lvl={"lvl."+ age} poker={member.poker} canFlip={member.canFlip} isFlipped={member.isFlipped} pic={member.src}/>
                     <div className="stats collapse">
                       {
                         member.stats.map((stat,index)=>{
                           /*return <Progress color={this.state.colors[index]} power={stat[Object.keys(stat)[0]]} stat={Object.keys(stat)[0]}/>*/
-                          return <Progress key={index} color={'rgba('+member.rgb[0]+','+member.rgb[1]+','+member.rgb[2]+','+(1-.15*index)+')'} power={stat[Object.keys(stat)[0]]} stat={Object.keys(stat)[0]}/>
+                          return <Progress key={index} color={'rgba('+member.rgb[0]+','+member.rgb[1]+','+member.rgb[2]+','+(1-.13*index)+')'} power={stat[Object.keys(stat)[0]]} stat={Object.keys(stat)[0]}/>
                         })
                       }
                       <p>{member.story}</p>

@@ -21,7 +21,7 @@ class Gallery extends Component{
   render(){
     return(
 
-      <div className="section">
+      <div className="section comics">
         <div className="container"><div className="row"><h2 className="box">{this.state.title}</h2> <h4>{this.state.subtitle}</h4></div></div>
         <div className="hand">
           {

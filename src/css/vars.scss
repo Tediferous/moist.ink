@@ -14,16 +14,17 @@ $magenta: rgba(255, 0, 255, 0.7);
 $yellow: rgba(255, 255, 0, 0.7);
 
 $black: #000;
+$darker-gray: #101010;
 $dark-gray: #202020;
 $middle-gray: #808080;
 $light-gray: #d0d0d0;
 $white: #fff;
 
-$primary: $black;
+$primary: $darker-gray;
 $primaryShadow: $white;
 
 $secondary: $middle-gray;
-$accent: $greenHex;
+$accent: $white;
 
 /*LENGTH*/
 $pokerWidth: 19.05rem;
