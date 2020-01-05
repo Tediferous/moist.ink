@@ -6,6 +6,7 @@ const Card = (props) => {
   var canF = props.canFlip ? " flip-card" : "";
   var poke = props.poker ? " poker" : "";
   return(
+    <a href={props.href}>
     <div className={"card" +isF +canF +poke } style={props.style}>
       <div className="card-front card-face">
         { props.pic ? <img className="card-img" src={props.pic} alt=""/> : <img className="card-img " src={card} alt=""/> }
@@ -20,6 +21,7 @@ const Card = (props) => {
         { props.canFlip ? <img className="card-img" src={card} alt=""/> : <div/>}
       </div>
     </div>
+    </a>
 
   );
 }
