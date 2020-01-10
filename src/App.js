@@ -21,7 +21,7 @@ function App() {
       <Navbar/>
       <Router>
         <Switch>
-          <Route path="/comic">
+          <Route path="/comics">
             <Gallery/>
           </Route>
           <Route path="/products">

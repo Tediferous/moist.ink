@@ -4,7 +4,11 @@ import logo from './ass/svg/logo.svg';
 class Jumbo extends Component{
   // Setting Initial State
   state = {
-    matrix: "1 0 0 0 0 \n 0 1 0 0 0 \n 0 0 1 0 0 \n 0 0 0 30 -15"
+    matrix: `1 0 0 0 0
+             0 1 0 0 0
+             0 0 1 0 0
+             0 0 0 30 -15
+             `
   }
 
   render(){
@@ -20,7 +24,7 @@ class Jumbo extends Component{
           <defs>
             <filter id="goo">
               <feGaussianBlur in="SourceGraphic" stdDeviation='10'/>
-              <feColorMatrix in="name" mode="matrix" values={this.state.matrix}/>
+              <feColorMatrix id="matrix" in="name" mode="matrix" values={this.state.matrix}/>
             </filter>
           </defs>
         </svg>
@@ -29,7 +33,7 @@ class Jumbo extends Component{
   }
 }
 class Drip extends Component{
-  state = { nDrops: 42 }
+  state = { nDrops: 17 }
   render(){
     return(
       <div>

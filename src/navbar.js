@@ -22,7 +22,7 @@ class Navbar extends Component {
     buttons: [
       {name:"Home",    active: true , path:"/" },
       {name:"Products",active: false, path:"/products" },
-      {name:"Comic",   active: false, path:"/comic" },
+      {name:"Comics",   active: false, path:"/comics" },
       {name:"Team",    active: false, path:"/team" },
     ],
     title:"MOIST.INK",
