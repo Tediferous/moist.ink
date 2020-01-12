@@ -13,12 +13,14 @@ class Jumbo extends Component{
 
   render(){
     return(
-      <div className="jumbotron invert">
-        <div className="back">
-        </div>
-        <div className="front">
-          <Drip/>
+      <div className="jumbotron">
+        <div className="display">
           <img src={logo} className="App-logo" alt="logo" />
+          <div className="droop"/>
+          <div className="wave wave1"/>
+          <div className="wave wave2"/>
+          <div className="wave wave3"/>
+          <div className="wave wave4"/>
         </div>
         <svg>
           <defs>
@@ -32,30 +34,30 @@ class Jumbo extends Component{
     );
   }
 }
-class Drip extends Component{
-  state = { nDrops: 17 }
-  render(){
-    return(
-      <div>
-        <div className="drip">
-          {
-            Drop(this.state.nDrops)
-          }
-          <div className="border"/>
-          <div className="border"/>
-        </div>
-      </div>
-    );
-  }
-}
-
-const Drop =(n)=>{
-  var i;
-  var divs = []
-  for (i=0; i<n; i++){
-    divs[i] = <div key={i} className="drop"/>
-  }
-  return divs
-}
-
+//class Drip extends Component{
+//  state = { nDrops: 5}
+//  render(){
+//    return(
+//      <div>
+//        <div className="drip">
+//          {
+//            Drop(this.state.nDrops)
+//          }
+//          <div className="border"/>
+//          <div className="border"/>
+//        </div>
+//      </div>
+//    );
+//  }
+//}
+//
+//const Drop =(n)=>{
+//  var i;
+//  var divs = []
+//  for (i=0; i<n; i++){
+//    divs[i] = <div key={i} className="drop"/>
+//  }
+//  return divs
+//}
+//
 export default Jumbo;
