@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import logo from './ass/svg/logo.svg';
+import logo from './ass/svg/black-logo.svg';
 
 class Jumbo extends Component{
   // Setting Initial State
@@ -16,11 +16,6 @@ class Jumbo extends Component{
       <div className="jumbotron">
         <div className="display">
           <img src={logo} className="App-logo" alt="logo" />
-          <div className="droop"/>
-          <div className="wave wave1"/>
-          <div className="wave wave2"/>
-          <div className="wave wave3"/>
-          <div className="wave wave4"/>
         </div>
         <svg>
           <defs>
@@ -34,21 +29,41 @@ class Jumbo extends Component{
     );
   }
 }
+
 //class Drip extends Component{
-//  state = { nDrops: 5}
+//  state = {
+//    nDrops: 5,
+//    nDreps: 0
+//  }
 //  render(){
 //    return(
 //      <div>
 //        <div className="drip">
 //          {
+//            Drep(this.state.nDreps)
+//          }
+//          {
 //            Drop(this.state.nDrops)
 //          }
+//          <div className="wave wave1"/>
+//          <div className="wave wave2"/>
+//          <div className="wave wave3"/>
+//          <div className="wave wave4"/>
 //          <div className="border"/>
 //          <div className="border"/>
 //        </div>
 //      </div>
 //    );
 //  }
+//}
+//
+//const Drep =(n)=>{
+//  var i;
+//  var divs = []
+//  for (i=0; i<n; i++){
+//    divs[i] = <div key={i} className="drep"/>
+//  }
+//  return divs
 //}
 //
 //const Drop =(n)=>{
@@ -59,5 +74,5 @@ class Jumbo extends Component{
 //  }
 //  return divs
 //}
-//
+
 export default Jumbo;

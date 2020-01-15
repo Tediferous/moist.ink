@@ -63,8 +63,8 @@ html {
     }
   }
   .jumbotron{
-    filter: invert(100);
     min-height: 100vh;
+    margin-bottom: 0;
     background: $middle-gray;
     color: $white;
     overflow: hidden;
@@ -89,7 +89,7 @@ html {
         filter: url(#goo);
         position: absolute;
         left:0; right: 0; top: 21.5rem;
-        height: 80%;
+        height: 60%;
         overflow: hidden;
         width: $pokerWidth - 2rem;
         margin-left: auto;
