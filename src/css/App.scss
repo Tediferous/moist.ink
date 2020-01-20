@@ -67,6 +67,7 @@ html {
     }
   }
   .jumbotron{
+    position: relative;
     min-height: 100vh;
     margin-bottom: 0;
     background: $middle-gray;
@@ -78,7 +79,7 @@ html {
       position: absolute;
       left: 0;
       width: 100%; 
-      height: 100%;
+      height: 100vh;
       object-fit: cover;
 
     }
