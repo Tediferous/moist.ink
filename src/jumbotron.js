@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
-import logo from './ass/svg/black-logo.svg';
+import logo from './ass/svg/logo.svg';
+import video from './ass/mp4/goo.mp4'
 
 class Jumbo extends Component{
   // Setting Initial State
@@ -17,6 +18,9 @@ class Jumbo extends Component{
         <div className="display">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
+          <video autoPlay muted loop id="video">
+            <source src={video} type="video/mp4"/>
+          </video>
         <svg>
           <defs>
             <filter id="goo">
@@ -32,7 +36,7 @@ class Jumbo extends Component{
 
 //class Drip extends Component{
 //  state = {
-//    nDrops: 5,
+//    nDrops: 0,
 //    nDreps: 0
 //  }
 //  render(){

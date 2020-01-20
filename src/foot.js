@@ -7,8 +7,8 @@ class Foot extends Component{
 
   render(){
     return(
-      <div className="footer footer-copyright text-center py-3">© 2019 Copyright:
-        <a href="/">MOIST.INK</a>
+      <div className="footer footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="/"> MOIST.INK</a>
       </div>
     );
   }

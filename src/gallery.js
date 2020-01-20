@@ -3,13 +3,13 @@ import Card from './card'
 
 class Gallery extends Component{
   state = {
-    title: "LOOK",
-    subtitle: "here",
+    title: "Comics",
+    subtitle: "origins",
     cards:[
-      {name: null,canFlip: false, isFlipped: false, poker: false , href: "https://bossip.files.wordpress.com/2014/09/michael-sam.jpg?w=337&h=220&crop=1",
-        text:"This is a sentence.", source:"https://www.kepplerspeakers.com/sam-m.jpg"},
-      {name:"Christopher",canFlip: false, isFlipped: true, poker: false,
-        text:"New music coming...", source:"https://imgix.bustle.com/uploads/image/2019/11/8/394f4df6-0cdd-4990-b8ef-4d177c63d762-shutterstock_editorial_10229705q.jpg?w=1020&h=576&fit=crop&crop=faces&auto=format&q=70"},
+      {name: null,canFlip: false, isFlipped: false, poker: false , href: "https://comic.moist.ink",
+        text:"Issue 0", source:"https://66.media.tumblr.com/b424a87375b65b714c4a29c246988e43/tumblr_owablyWWma1ru8b0jo1_r1_1280.png"},
+      {name: null,canFlip: false, isFlipped: false, poker: false , href: "https://comic.moist.ink/post/170506273815",
+        text:"Issue 1", source:"https://66.media.tumblr.com/8a5a4fef9ba062a2a8d8e15d3925512f/tumblr_p245xaLdNr1ru8b0jo1_1280.png"},
     ]
   }
   render(){
