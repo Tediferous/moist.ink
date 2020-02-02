@@ -9,14 +9,15 @@ COPY . /app
 RUN npm run build
 
 # production environment
-FROM staticfloat/nginx-certbot:latest
-ENV CERTBOT_EMAIL ted@moist.ink
-ENV ENVSUBST_VARS FQDN
-ENV FQDN moist.ink
+#FROM staticfloat/nginx-certbot:latest
+#ENV CERTBOT_EMAIL ted@moist.ink
+#ENV ENVSUBST_VARS FQDN
+#ENV FQDN moist.ink
+FROM nginx
+RUN rm /etc/nginx/conf.d/default.conf
 COPY --from=build /app/build /usr/share/nginx/html
-#RUN rm /etc/nginx/conf.d/default.conf
-RUN mkdir conf.d
 COPY nginx/nginx.conf /etc/nginx/conf.d
+COPY private /private
 EXPOSE 80
 EXPOSE 443
 #CMD ["nginx", "-g", "daemon off;"]
