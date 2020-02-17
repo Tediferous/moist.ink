@@ -8,7 +8,7 @@ class Bio extends Component{
       {
         name: "Ted" ,birth: [1996,1,17], isFlipped: true, canFlip: true, poker: true, rgb: [0,255,0], src: ted,
         stats:[
-          {HEALTH: 82},
+          {HP: 82},
           {POWER: 72},
           {STEALTH: 17},
           {ARCANA: 32},
