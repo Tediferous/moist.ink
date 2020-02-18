@@ -11,20 +11,20 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 var flips = document.getElementsByClassName("flip-card");
-var membs = document.getElementsByClassName("member");
 
 for(var i=0; i<flips.length; i++) {
   flips[i].addEventListener('click', function() {
     this.classList.toggle('is-flipped');
+    var grandDaddy = this.parentElement.parentElement;
+
+    if (grandDaddy.classList.contains('member')){
+      grandDaddy.classList.toggle('active');
+    }
   },false);
-}
-for (i = 0; i < membs.length; i++) {
-  membs[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-  });
 }
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
