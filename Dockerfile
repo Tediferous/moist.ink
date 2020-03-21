@@ -13,7 +13,7 @@ RUN npm run build
 #ENV CERTBOT_EMAIL ted@moist.ink
 #ENV ENVSUBST_VARS FQDN
 #ENV FQDN moist.ink
-FROM nginx
+FROM nginx:1.17
 RUN rm /etc/nginx/conf.d/default.conf
 COPY --from=build /app/build /usr/share/nginx/html
 COPY nginx/nginx.conf /etc/nginx/conf.d
