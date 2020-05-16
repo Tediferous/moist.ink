@@ -4,15 +4,15 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
-    "node-sass": "^4.13.1",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
     "popper.js": "^1.15.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-native-elements": "^1.1.0",
     "react-native-vector-icons": "^6.6.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.3.0",
+    "react-scripts": "^3.4.0",
     "tsutils": "^3.17.1",
     "typescript": "^3.6.2"
   },
