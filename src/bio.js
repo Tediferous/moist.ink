@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Card from './card'
 import ted from './ass/img/ted.jpg'
+import robert from './ass/img/robert.jpg'
 
 class Bio extends Component{
   state = {
@@ -18,9 +19,16 @@ class Bio extends Component{
         story: `    Storm: When this card is in play all other cards on the field lose 3 HP. Ted then gains 3 HP for each card affected. Email: ted@moist.ink`
       },
       {
-        name: null ,birth: [], isFlipped: true, canFlip: false, poker: true, rgb: [0,255,255], locked: true, src: null,
-        stats: [],
-        story: null
+        name: "Robert" ,birth: [1996,11,11], isFlipped: true, canFlip: true, poker: true, rgb: [117,9,184], src: robert,
+        stats: [
+          {HP: 77},
+          {STRENGTH: 61},
+          {STEALTH: 84},
+          {CRITICAL: 63},
+          {"LUST FOR DEATH": 110},
+          {RCDC: 8},
+        ],
+        story: `    Void Warp: Once per turn, this card's controller has the option to flip all cards face down, shuffle them together, and give each player the same number of cards they had when this effect started. Email: robert@moist.ink`
       },
       {
         name: null ,birth: [], isFlipped: true, canFlip: false, poker: true, rgb: [255,0,0], locked: true, src: null,
