@@ -14,4 +14,4 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: dorfeuille:moist
-        tags: GITHUB_REF
+        tags: $GITHUB_REF
