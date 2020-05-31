@@ -312,6 +312,7 @@ html {
 
 .flex-bio > * {
   flex: 1 100%;
+  align-items: flex-start;
 }
 
 .stat-row {
@@ -322,20 +323,26 @@ html {
   flex: 1 100%;
 }
 /* Medium screens */
-@media all and (min-width: 600px) {
+@media all and (min-width: $pokerWidth * 2.5) {
   /* We tell both sidebars to share a row */
-  .flex-bio { flex-wrap: nowrap; }
+  .flex-bio { 
+    flex-wrap:  wrap; 
+    .member {
+      flex: 0 50%;
+    }
+  }
   .stat-row { flex-wrap: nowrap; }
   .card { flex: 1 auto; }
   .stats{ flex: 1 auto; }
 }
 
 /* Large screens */
-@media all and (min-width: 800px) {
+@media all and (min-width: $pokerWidth * 5) {
   /* We invert order of first sidebar and main
    * And tell the main element to take twice as much width as the other two sidebars 
    */
   .stats    { flex: 2 auto;  }
+  .flex-bio { flex-wrap:  nowrap; }
 }
 
 .flex-container {
