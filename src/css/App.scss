@@ -300,6 +300,7 @@ html {
     margin: .5rem;
     order: 2;
     background-color: $black;
+    line-height: auto; /** I know this is not valid, i want this so chrome doesnt set it**/
   
     .progress-bar{
       color: $white;
