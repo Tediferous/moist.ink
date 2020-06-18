@@ -23,7 +23,7 @@ class Store extends Component{
         {name: "Line: Body", text:"$23", soldout: true, source:"https://instagram.fatl1-2.fna.fbcdn.net/v/t51.2885-15/e35/31287351_2099883800256079_5282531451609284608_n.jpg?_nc_ht=instagram.fatl1-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=av7o8KhruIcAX_EOykA&oh=00d138ba1fb7f021fe42fe4a8afacee1&oe=5F016207"},
       ],
       [
-        {name: "Color: Bust", text:"$20", soldout: true, source:"https://instagram.fatl1-2.fna.fbcdn.net/v/t51.2885-15/e35/14334829_1825690901043613_700823641_n.jpg?_nc_ht=instagram.fatl1-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=C1WOgEoOm3wAX9lPGFt&se=7&oh=e56802b783457bdc557956163606c66b&oe=5EDA9860"},
+        {name: "Color: Bust", text:"$20", soldout: true, source:"https://instagram.fatl1-2.fna.fbcdn.net/v/t51.2885-15/e35/11931256_182906552067523_86654381_n.jpg?_nc_ht=instagram.fatl1-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=7AQprrEmSJIAX9y4UMS&oh=f6adbab4a47b59f9c50f7adce2c70bc0&oe=5F142958"},
         {name: "Color: Torso", text:"$23", soldout: true, source:"https://instagram.fatl1-1.fna.fbcdn.net/v/t51.2885-15/e15/10932098_1544532769129536_978001880_n.jpg?_nc_ht=instagram.fatl1-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=h93hUmCePnIAX95bjZf&oh=cb0f20584f780a8f2dbb483401bd4727&oe=5EFC259B"},
         {name: "Color: Body", text:"$26", soldout: true, source:"https://instagram.fatl1-1.fna.fbcdn.net/v/t51.2885-15/e35/13715052_837599623038117_1402532284_n.jpg?_nc_ht=instagram.fatl1-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=SqPrG22hMQUAX_NJS7j&oh=418f0a3ea3b828529c45924032151444&oe=5EFD2B4D"},
       ],
