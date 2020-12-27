@@ -32,6 +32,7 @@ class Jumbo extends Component{
       </div>
     );
   }
+
 }
 
 //class Drip extends Component{
